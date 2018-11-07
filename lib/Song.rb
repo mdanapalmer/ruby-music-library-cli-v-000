@@ -44,6 +44,6 @@ def genre=(genre)
 end
 
 def self.find_by_name(name)
-  all.detect {}
+  all.detect {|song| song.name == name}
 
 end
