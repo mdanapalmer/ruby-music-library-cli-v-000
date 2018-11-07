@@ -36,8 +36,7 @@ def add_song(song)
 end
 
 def genres
-  songs.map do |song|
-    song.genre.uniq
+  songs.map {|song| song.genre}.uniq
   end
 end
 
