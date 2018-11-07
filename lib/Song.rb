@@ -50,8 +50,8 @@ end
 def self.find_or_create_by_name(name)
   if find_by_name(name)
   else
-    
   song = Song.new(name)
+end
 end
 
 end
