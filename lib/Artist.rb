@@ -36,7 +36,7 @@ def add_song(song)
 end
 
 def genres
-  @songs.each do |song|
+  songs.map do |song|
     song.genre == genre
   end
 end
