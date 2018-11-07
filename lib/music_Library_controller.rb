@@ -1,3 +1,3 @@
-class MusicLibraryImporter
+class MusicLibraryController
 
 end
