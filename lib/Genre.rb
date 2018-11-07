@@ -30,4 +30,7 @@ def self.create(name)
   genre
 end
 
+def artists
+  songs.map { |song| song.artist}.uniq
+
 end
