@@ -48,7 +48,7 @@ def self.find_by_name(name)
 end
 
 def self.find_or_create_by_name(name)
-  all.detect { |song| song.name == name} || song = Song.new(name)
-end 
+  find_by_name || song = Song.new(name)
+end
 
 end
