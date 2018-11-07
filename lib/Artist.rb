@@ -35,4 +35,11 @@ def add_song(song)
   @songs << song unless @songs.include?(song)
 end
 
+def genres
+  @songs.each do |song|
+    song.genre == genre
+  end
+end
+
+
 end
