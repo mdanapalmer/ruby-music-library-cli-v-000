@@ -37,7 +37,7 @@ end
 
 def genres
   songs.map do |song|
-    song.genre == genre
+    song.genre
   end
 end
 
