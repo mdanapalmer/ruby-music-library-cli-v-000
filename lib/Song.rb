@@ -48,7 +48,9 @@ def self.find_by_name(name)
 end
 
 def self.find_or_create_by_name(name)
-  find_by_name(name) ||= 
+  if find_by_name(name)
+  else
+    
   song = Song.new(name)
 end
 
